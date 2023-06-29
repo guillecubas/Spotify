@@ -29,7 +29,7 @@ public class SpotifyController {
         sqLiteDBHelper.insertData("Artists", "name, id, Followers", insertStatement);
     }
 
-    private static void processAlbumsTable(String artistId, SQLiteDvlll  l , ,                                                                                                                       BHelper sqLiteDBHelper) throws Exception {
+    private static void processAlbumsTable(String artistId, SQLiteDBHelper sqLiteDBHelper) throws Exception {
         List<List<String>> albumMap = new ArrayList<>();
         Albums albums = new Albums(artistId, albumMap);
         albums.AlbumsMap();
